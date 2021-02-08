@@ -59,6 +59,14 @@ class AppStoreServerNotification implements ServerNotificationContract
     }
 
     /**
+     * @return ServerNotification
+     */
+    public function getResponse(): ServerNotification
+    {
+        return $this->notification;
+    }
+
+    /**
      * @return bool
      */
     public function isAutoRenewal(): bool
